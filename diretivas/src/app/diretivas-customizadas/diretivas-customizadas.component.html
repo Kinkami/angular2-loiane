@@ -1,0 +1,23 @@
+<p fundoAmarelo>
+    diretivas-customizadas Fundo Amarelo
+</p>
+
+
+<button fundoAmarelo>Banco do Brasil</button>
+
+<p highlightMouse>
+    Texto com highlight quando passo o mouse
+</p>
+
+
+<p [highlight]="'red'" [defaultColor]="'grey'">
+    Texto com highlight com cores customizadas
+</p>
+
+<h4>DiretivaEstrutura customizada - ngElse</h4>
+
+<div*ngIf="mostrarCursos"> Lista de cursos aqui.</div>
+
+    <div *ngIf="!mostrarCursos">Não existem cursos para serem listados.</div>
+    <br>
+    <button (click)="OnMostrarCursos()">Mostar ou esconder cursos</button>
